@@ -16,7 +16,7 @@ jobs:
       - run: dart --version
       - name: current dir
       - run: pwd
-      - name: current dir
+      - name: list dir
       - run: ls
       - run: chmod +x ./run.sh
       - run: ./run.sh
