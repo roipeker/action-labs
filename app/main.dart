@@ -14,9 +14,10 @@ Future main(List<String> arguments) async {
   var result = await dio.get('https://deto-events.com/v1/events');
   print('- events result:\n\n${result.data}');
 
-  var dataString = jsonEncode(result.data);
-  
-  
+  var sendData = {
+    'events': result.data,
+    'env': Platform.environment,
+  };
 
   exit(0);
 }
