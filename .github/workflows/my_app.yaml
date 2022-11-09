@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     # name: "run dart app"
     steps:
-      # - run: echo "AWESOME works!, triggered by ${{github.event_name}}"
+      - run: echo "AWESOME works!, triggered by ${{github.event_name}}"
       - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1.3
       - name: change permissions on app
