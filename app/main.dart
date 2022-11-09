@@ -17,6 +17,6 @@ Future main(List<String> arguments) async {
     'events': result.data,
     'env': Platform.environment,
   };
-
+  
   exit(0);
 }
