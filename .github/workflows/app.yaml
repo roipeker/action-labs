@@ -1,4 +1,4 @@
-name: compileme
+name: app
 
 on: workflow_dispatch
 
