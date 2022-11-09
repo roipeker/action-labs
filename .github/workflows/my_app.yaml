@@ -17,7 +17,7 @@ jobs:
       - name: current dir
         run: pwd
       - name: list dir
-        run: echo "Lets get in"
+        run: echo "Lets get in";ls
       - run: cd app
       - run: ls -a
       - run: ./run.sh
