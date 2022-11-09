@@ -15,7 +15,7 @@ Future main(List<String> arguments) async {
   print('- events result:\n\n${result.data}');
 
   var dataString = jsonEncode(result.data);
-  Platform.e
+  Platform.environment
 
   exit(0);
 }
