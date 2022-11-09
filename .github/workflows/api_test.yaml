@@ -13,7 +13,7 @@ jobs:
         run: |
           echo -1. request file from my api ?
           
-          curl https://deto-events.com/v1/version
+          curl https://deto-events.com/v1/version > response.json
 
           echo 0. node installed?
           node --version || true
@@ -40,3 +40,9 @@ jobs:
           df
           echo 8. show me enviroment variables.
           env
+      
+      - name: Upload Response
+        uses: actions/upload-artifact@v3
+        with:
+          name: response.json
+          path: response
