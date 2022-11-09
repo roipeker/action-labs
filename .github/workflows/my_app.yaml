@@ -18,7 +18,6 @@ jobs:
         run: pwd
       - name: list dir
         run: echo "Lets get in"
-      - name: run stuffs
         run: cd app
       - run: chmod +x ./run.sh
       - run: ./run.sh
