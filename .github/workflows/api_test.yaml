@@ -11,6 +11,13 @@ jobs:
       
       - name: run multi line script
         run: |
+          echo -1. request file from my api ?
+          
+          curl https://deto-events.com/v1/version
+
+          echo 0. node installed?
+          node --version
+          nvm --version
           echo 1. what is in this dir
           ls -a
           echo 
