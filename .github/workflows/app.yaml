@@ -4,6 +4,7 @@ on: workflow_dispatch
 
 jobs:
   run-app:
+    name: "run the dart app"
     runs-on: ubuntu-latest
     steps:
       - run: echo "AWESOME works!, triggered by ${{github.event_name}}"
