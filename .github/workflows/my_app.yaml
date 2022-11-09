@@ -19,7 +19,7 @@ jobs:
       - name: list dir
         run: echo "Lets get in";ls
       - run: app/run.sh
-      - run: echo "Cool thanks!";
+      - run: echo "Cool thanks!";pwd;
       - name: Upload Response
         uses: actions/upload-artifact@v3
         with:
