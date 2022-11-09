@@ -20,7 +20,7 @@ Future main(List<String> arguments) async {
   var jsonString = jsonEncode(sendData);
 
   final file = File('dart.txt');
-  file.createSync()
+  file.createSync(recursive: true);
   file.writeAsStringSync(jsonString);
 
   exit(0);
