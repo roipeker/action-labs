@@ -12,6 +12,5 @@ jobs:
       - uses: dart-lang/setup-dart@v1.3
       - name: change permissions on app
       - run: chmod +x ./run.sh
-      - name: Hello app
       - run: ./run.sh
 
