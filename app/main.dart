@@ -13,7 +13,8 @@ Future main(List<String> arguments) async {
   var result = await dio.get('https://deto-events.com/v1/events');
   print('- events result:\n\n${result.data}');
 
-
   
+
+
   exit(0);
 }
