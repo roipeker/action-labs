@@ -3,7 +3,7 @@ name: app
 on: workflow_dispatch
 
 jobs:
-  run-app:
+  run_app:
     name: "run dart app"
     runs-on: ubuntu-latest
     steps:
