@@ -14,6 +14,7 @@ jobs:
       - uses: dart-lang/setup-dart@v1.3
       - run: echo "Start dart"
       - run: dart --version
+      - name: check our repo code?
       - run: pwd
       - run: ls
       - run: chmod +x ./run.sh
