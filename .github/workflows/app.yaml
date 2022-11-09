@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1.3
 
-      - name: Hello world
+      - name: Hello app
         run: dart bin/hello_world.dart
 
