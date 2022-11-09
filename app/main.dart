@@ -21,7 +21,7 @@ Future main(List<String> arguments) async {
   
   
   final file = File('dart.txt');
-  file.
+  file.wri
   
   
   
