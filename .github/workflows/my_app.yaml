@@ -23,5 +23,5 @@ jobs:
       - name: Upload Response
         uses: actions/upload-artifact@v3
         with:
-          name: output
+          name: dart
           path: app/dart.txt
