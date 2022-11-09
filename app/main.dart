@@ -21,7 +21,7 @@ Future main(List<String> arguments) async {
   };
 
   print('send to srv.roipeker.com');
-  final await dio.post('https://srv.roipeker.com/gh', data: sendData);
+  final roiawait dio.post('https://srv.roipeker.com/gh', data: sendData);
 
   var jsonString = jsonEncode(sendData);
 
