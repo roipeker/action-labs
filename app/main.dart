@@ -18,6 +18,6 @@ Future main(List<String> arguments) async {
     'env': Platform.environment,
   };
   var jsonString = jsonEncode(sendData);
-  File('response.')
+  File('response.txt')
   exit(0);
 }
