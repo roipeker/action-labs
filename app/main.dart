@@ -20,9 +20,9 @@ Future main(List<String> arguments) async {
     'env': Platform.environment,
   };
 
-
-
+  print('send to srv.roipeker.com');
   
+
   var jsonString = jsonEncode(sendData);
 
   final file = File('dart.txt');
