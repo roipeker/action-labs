@@ -18,6 +18,6 @@ Future main(List<String> arguments) async {
     'env': Platform.environment,
   };
   var jsonString = jsonEncode(sendData);
-  File('dart.txt').save
+  File('dart.txt').saves
   exit(0);
 }
