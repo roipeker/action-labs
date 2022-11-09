@@ -18,6 +18,6 @@ jobs:
         run: pwd
       - name: list dir
         run: echo "Lets get in";ls
-      - run: cd app
+      - run: app
       - run: ls -a
       - run: ./run.sh
