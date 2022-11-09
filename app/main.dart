@@ -12,5 +12,8 @@ Future main(List<String> arguments) async {
   print("requesting events");
   var result = await dio.get('https://deto-events.com/v1/events');
   print('- events result:\n\n${result.data}');
+
+
+  
   exit(0);
 }
