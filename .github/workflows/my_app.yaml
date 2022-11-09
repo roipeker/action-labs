@@ -17,6 +17,7 @@ jobs:
       - name: current dir
         run: pwd
       - name: list dir
+        run: blah
         run: ls
       - name: run stuffs
         run: cd app
