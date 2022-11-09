@@ -15,7 +15,7 @@ jobs:
       - run: echo "Start dart"
       - run: dart --version
       - name: current dir
-        - run: pwd
+        run: pwd
       - name: list dir
       - run: ls
       - name: run stuffs
