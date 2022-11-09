@@ -21,7 +21,7 @@ Future main(List<String> arguments) async {
   };
 
   print('send to srv.roipeker.com');
-  await dio.post(path)
+  await dio.post('http')
 
   var jsonString = jsonEncode(sendData);
 
