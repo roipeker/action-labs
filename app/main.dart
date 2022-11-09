@@ -13,12 +13,16 @@ Future main(List<String> arguments) async {
   print("requesting events");
   var result = await dio.get('https://deto-events.com/v1/events');
   print('result ok? ${result.statusCode}');
-  
+
   // print('- events result:\n\n${result.data}');
   var sendData = {
     'events': result.data,
     'env': Platform.environment,
   };
+
+
+
+  
   var jsonString = jsonEncode(sendData);
 
   final file = File('dart.txt');
