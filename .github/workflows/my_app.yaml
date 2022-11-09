@@ -12,7 +12,7 @@ jobs:
       - run: echo "AWESOME works!, triggered by ${{github.event_name}}"
       - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1.3
-      - run: echo "Start"
+      - run: echo "Star t"
       # - run: chmod +x ./run.sh
       # - run: ./run.sh
       # - run: echo "Great"
