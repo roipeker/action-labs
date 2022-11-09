@@ -19,6 +19,6 @@ jobs:
       - name: list dir
         run: ls
       - name: run stuffs
-        run: chmod +x ./run.sh
+        run: cd app
         run: chmod +x ./run.sh
       - run: ./run.sh
