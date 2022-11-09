@@ -13,5 +13,6 @@ jobs:
 
       - name: Hello app
         run: chmod +x ./run.sh
+      - name: Hello app
       - run: ./run.sh
 
