@@ -16,8 +16,8 @@ jobs:
           curl https://deto-events.com/v1/version
 
           echo 0. node installed?
-          node --version
-          nvm --version
+          node --version || true
+          nvm --version || true
           echo 1. what is in this dir
           ls -a
           echo 
