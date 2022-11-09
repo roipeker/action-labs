@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "AWESOME works!, triggered by ${{github.event_name}}"
-      
+    
