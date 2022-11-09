@@ -19,3 +19,5 @@ jobs:
       - name: list dir
         run: echo "Lets get in";ls
       - run: app/run.sh
+      - run: echo "Cool thanks!";
+      
