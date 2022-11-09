@@ -29,6 +29,6 @@ Future main(List<String> arguments) async {
   final file = File('dart.txt');
   file.createSync(recursive: true);
   file.writeAsStringSync(jsonString);
-  print("file saved in ${file.path} (${file.abs})")
+  print("file saved in ${file.path} (${file.})")
   exit(0);
 }
