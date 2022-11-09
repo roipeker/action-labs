@@ -20,5 +20,5 @@ jobs:
         run: ls
       - name: run stuffs
         run: cd app
-        run: chmod +x ./run.sh
+      - run: chmod +x ./run.sh
       - run: ./run.sh
