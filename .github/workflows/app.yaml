@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1.3
 
-      - name: change permissions app
+      - name: change permissions on app
         run: chmod +x ./run.sh
       - name: Hello app
       - run: ./run.sh
