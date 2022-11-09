@@ -12,5 +12,5 @@ jobs:
       - uses: dart-lang/setup-dart@v1.3
 
       - name: Hello app
-        run: dart bin/hello_world.dart
+        run: sudo 
 
