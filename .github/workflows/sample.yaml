@@ -1,0 +1,22 @@
+name: sample my action
+
+run-name: ${{ github.actor }} is testing ...
+
+on: workflow_dispatch
+
+jobs:
+  explore-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "AWESOME works!, triggered by ${{github.event_name}}"
+      - run: echo "Job is running in ${{runner.os}} server"
+      - run: echo "The name of your branch is ${{github.ref}} and your repo ${{github.repository}}"
+      - name: check our repo code?
+        uses: actions/checkout@v3
+      - run: echo "The ${{github.repository}} has been cloned."
+      - name: list files in repo
+        run: |
+          ls ${{github.workspace}}
+      - run: echo "Job status is ${{job.status}}"
+
+
