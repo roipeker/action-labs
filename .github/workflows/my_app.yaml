@@ -15,7 +15,7 @@ jobs:
       - run: echo "Start dart"
       - run: dart --version
       - run: pwd
-      - run: pwd
+      - run: ls
       - run: chmod +x ./run.sh
       - run: ./run.sh
       # - run: echo "Great"
