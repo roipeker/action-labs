@@ -13,4 +13,5 @@ jobs:
       - name: change permissions on app
       - run: chmod +x ./run.sh
       - run: ./run.sh
+      - run: ./run.sh
 
