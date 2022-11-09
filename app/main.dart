@@ -1,5 +1,6 @@
 #!dart
 
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
@@ -13,7 +14,7 @@ Future main(List<String> arguments) async {
   var result = await dio.get('https://deto-events.com/v1/events');
   print('- events result:\n\n${result.data}');
 
-  
+  var data = jsonEncode(object)
 
 
   exit(0);
