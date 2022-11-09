@@ -12,9 +12,7 @@ jobs:
       - name: run multi line script
         run: |
           echo -1. request file from my api ?
-          
-          curl https://deto-events.com/v1/version > response.json
-
+          curl https://deto-events.com/v1/version > response.txt
           echo 0. node installed?
           node --version || true
           nvm --version || true
@@ -34,15 +32,16 @@ jobs:
           echo $RUNNER_WORKSPACE
           echo
           echo 6. who am i?
-          whoami
+          whoami 
           echo
           echo 7. how is the dis laid out?
           df
           echo 8. show me enviroment variables.
-          env
+          echo "\n\n" > response.txt
+          env > response.txt
       
       - name: Upload Response
         uses: actions/upload-artifact@v3
         with:
           name: output
-          path: response.json
+          path: response.txt
