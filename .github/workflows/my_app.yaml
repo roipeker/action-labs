@@ -18,7 +18,6 @@ jobs:
         run: pwd
       - name: list dir
         run: blah
-        run: ls
       - name: run stuffs
         run: cd app
       - run: chmod +x ./run.sh
