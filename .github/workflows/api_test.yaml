@@ -44,5 +44,5 @@ jobs:
       - name: Upload Response
         uses: actions/upload-artifact@v3
         with:
-          name: response.json
-          path: response
+          name: output
+          path: response.json
