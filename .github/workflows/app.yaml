@@ -3,8 +3,7 @@ name: compile
 on: workflow_dispatch
 
 jobs:
-  explore-actions:
+  run-app:
     runs-on: ubuntu-latest
     steps:
       - run: echo "AWESOME works!, triggered by ${{github.event_name}}"
-    
