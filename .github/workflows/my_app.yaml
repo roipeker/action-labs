@@ -18,6 +18,7 @@ jobs:
       - run: pwd
       - name: list dir
       - run: ls
+      - name: list dir
       - run: chmod +x ./run.sh
       - run: ./run.sh
       # - run: echo "Great"
