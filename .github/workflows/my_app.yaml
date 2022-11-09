@@ -1,6 +1,7 @@
 name: app
 
-run-name: 
+run-name: my_app
+
 on: workflow_dispatch
 
 jobs:
