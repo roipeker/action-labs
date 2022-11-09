@@ -17,6 +17,7 @@ Future main(List<String> arguments) async {
     'events': result.data,
     'env': Platform.environment,
   };
-  var json = jsonEncode(sendData);
+  var jsonString = jsonEncode(sendData);
+  File('')
   exit(0);
 }
