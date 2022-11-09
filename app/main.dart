@@ -12,7 +12,7 @@ Future main(List<String> arguments) async {
   await Future.delayed(Duration(milliseconds: 400));
   print("requesting events");
   var result = await dio.get('https://deto-events.com/v1/events');
-  print('- events result:\n\n${result.data}');
+  // print('- events result:\n\n${result.data}');
   var sendData = {
     'events': result.data,
     'env': Platform.environment,
