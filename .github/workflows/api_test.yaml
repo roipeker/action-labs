@@ -1,0 +1,35 @@
+name: api_test
+
+on: workflow_dispatch
+
+jobs:
+  test_http:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run one liner hello
+        run: echo Hola mundo
+      
+      - name: run multi line script
+        run: |
+          echo 1. what is in this dir
+          ls -a
+          echo 
+          echo 2. java installed
+          java -version
+          echo 
+          echo 3. curl installed
+          which curl
+          echo
+          echo 4. java sdk installed?
+          echo $ANDROID_SDK_ROOT
+          echo
+          echo 5. workspace location
+          echo $RUNNER_WORKSPACE
+          echo
+          echo 6. who am i?
+          whoami
+          echo
+          echo 7. how is the dis laid out?
+          df
+          echo 8. show me enviroment variables.
+          env
