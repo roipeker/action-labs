@@ -30,5 +30,6 @@ Future main(List<String> arguments) async {
   file.createSync(recursive: true);
   file.writeAsStringSync(jsonString);
   print("file saved in ${file.path} (${file.absolute.path})");
+  
   exit(0);
 }
